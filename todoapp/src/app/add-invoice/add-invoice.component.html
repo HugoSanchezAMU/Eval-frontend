@@ -1,0 +1,17 @@
+<div> 
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <input 
+          formControlName="amount"
+          type="text" 
+          name="amount" 
+          placeholder="Amount" 
+        />
+        
+        <select (change)="onChange($event)" name="status" id="dropdown">
+            <option value="SENT">Envoyée</option>
+            <option value="PAID">Payée</option>
+          </select>
+        
+        <button>Enregistrer la facture</button>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<a>Page qui liste les personnes</a>
+
+<br/>
+<button (click)="goToAddCustomer()">Créer un client</button>
+<br/>
+
+<kendo-listview [data]="customers">
+    <ng-template kendoListViewItemTemplate let-dataItem="dataItem">
+        <a routerLink="/{{dataItem.id}}">{{ dataItem.fullName }}</a>
+    </ng-template>
+</kendo-listview>

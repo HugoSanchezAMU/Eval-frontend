@@ -1,0 +1,13 @@
+<h3>{{customer.fullName}}</h3>
+<h4>{{customer.email}}</h4>
+
+<br/>
+<button (click)="getBackToList()">Retour aux clients</button>
+<br/>
+<table>
+<ul *ngFor="let invoice of invoices">
+    <li>{{invoice.amount}} €</li>
+    <li>{{invoice.status}}</li>
+</ul>
+</table>
+<button (click)="goToAdd()">Créer une facture</button>

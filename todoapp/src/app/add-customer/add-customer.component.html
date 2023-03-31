@@ -1,0 +1,17 @@
+<div> 
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+        <input 
+          formControlName="fullName"
+          type="text" 
+          name="fullName" 
+          placeholder="Full Name" 
+        />
+        <input 
+          formControlName="email"
+          type="text" 
+          name="email" 
+          placeholder="email" 
+        />
+        <button>Enregistrer</button>
+    </form>
+</div>
